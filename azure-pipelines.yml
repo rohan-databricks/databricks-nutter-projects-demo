@@ -3,14 +3,16 @@ variables:
 - group: 'Nutter Testing'
 
 trigger:
-  batch: true
-  branches:
-    include:
-    - '*'
-  paths:
-    exclude:
-      - README.md
-      - images
+ - master
+#  batch: true
+#  branches:
+#    include:
+#    - '*'
+#  paths:
+#    exclude:
+#      - README.md
+#      - images
+
 #  tags:
 #    include:
 #      - v*.*
