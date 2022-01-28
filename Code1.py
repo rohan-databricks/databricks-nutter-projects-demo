@@ -11,8 +11,7 @@ def generate_data1(n=1000, name='my_cool_data'):
 
 # COMMAND ----------
 
-#removed comments from top and added here
-#testing release 30
+#testing release 31
 
 def upper_columns(df: DataFrame, cols: list) -> DataFrame:
     new_cols = []
