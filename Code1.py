@@ -12,6 +12,7 @@ def generate_data1(n=1000, name='my_cool_data'):
 # COMMAND ----------
 
 #testing release 31
+#testung release 32
 
 def upper_columns(df: DataFrame, cols: list) -> DataFrame:
     new_cols = []
