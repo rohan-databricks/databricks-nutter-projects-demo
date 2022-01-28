@@ -2,11 +2,12 @@
 variables:
 - group: 'Nutter Testing'
 
-trigger: none
-#  batch: true
-#  branches:
-#    include:
+trigger:
+  batch: true
+  branches:
+    include:
 #    - '*'
+     - master
 #  paths:
 #    exclude:
 #      - README.md
@@ -17,15 +18,15 @@ trigger: none
 #      - v*.*
 #      - prod
 
-pr:
-  branches:
-    include:
-      - master
+pr: none
+#  branches:
+#    include:
+#      - master
 #      - releases
-  paths:
-    exclude:
-      - README.md
-      - images
+#  paths:
+#    exclude:
+#      - README.md
+#      - images
       
 stages:
 - stage: onPush
