@@ -2,8 +2,7 @@
 variables:
 - group: 'Nutter Testing'
 
-trigger:
- - master
+trigger: none
 #  batch: true
 #  branches:
 #    include:
@@ -18,15 +17,15 @@ trigger:
 #      - v*.*
 #      - prod
 
-#pr:
-#  branches:
-#    include:
-#      - master
+pr:
+  branches:
+    include:
+      - master
 #      - releases
-#  paths:
-#    exclude:
-#      - README.md
-#      - images
+  paths:
+    exclude:
+      - README.md
+      - images
       
 stages:
 - stage: onPush
@@ -60,15 +59,6 @@ stages:
         python -m pip install --upgrade databricks-cli
       displayName: 'Install dependencies'
 
-    #- script: |
-    #    echo [DEFAULT] >> ~/.databrickscfg
-    #    echo host = $DATABRICKS_HOST >> ~/.databrickscfg
-    #    echo token = $DATABRICKS_TOKEN >> ~/.databrickscfg
-    #    cat  ~/.databrickscfg
-    #  env:
-    #    DATABRICKS_HOST: $(db_host_test)
-    #    DATABRICKS_TOKEN: $(db_token_test)
-    #  displayName: ‘Configure Databricks CLI’
 
 
 # https://docs.databricks.com/dev-tools/api/latest/repos.html
