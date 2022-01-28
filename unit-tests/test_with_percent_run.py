@@ -21,7 +21,7 @@ class TestPercentRunFixture(NutterFixture):
   def __init__(self):
     self.code2_table_name = "my_data"
     self.code1_view_name = "my_cool_data"
-    self.code1_num_entries = 100
+    self.code1_num_entries = 1000
     NutterFixture.__init__(self)
     
   def run_code1_percent_run(self):
